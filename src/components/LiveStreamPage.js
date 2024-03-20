@@ -18,6 +18,14 @@ const LiveStreamPage = () => {
                 return { videoId: 'KLX0C_OUmaw', name: 'Vadtal' };
             case '4':
                 return { videoId: 'wDMVg2kJGxU', name: 'Dwarka' };
+            case '5':
+                return { videoId: '1R7zj5P69t8', name: 'Kashi Vishwanath' };
+            case '6':
+                return { videoId: 'e5o7xg_F3Uo', name: 'Ujjain Mahakaleshwar' };
+            case '7':
+                return { videoId: '9rriS35zQjI', name: 'Siddhivinayak Mumbai' };
+            case '8':
+                return { videoId: 'VJabdntFLHI', name: 'Shirdi' };
             // Add more cases for other temples
             default:
                 return { videoId: '', name: '' };
