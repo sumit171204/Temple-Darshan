@@ -6,6 +6,13 @@ import temple1Image from '../images/sarangpur.jpeg';
 import temple2Image from '../images/somnath.jpg';
 import temple3Image from '../images/vadtal.jpg';
 import temple4Image from '../images/dwarka.jpg';
+import temple5Image from '../images/kashi.jpg';
+import temple6Image from '../images/ujjain.jpg';
+import temple7Image from '../images/siddhivinayak_mumbai.jpg';
+import temple8Image from '../images/shirdi.jpg';
+
+
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faCalendar } from '@fortawesome/free-solid-svg-icons';
@@ -48,6 +55,30 @@ const HomePage = () => {
                         <Link to={`/live/4`}>
                             <img src={temple4Image} alt="Dwarka" />
                             <p className="temple-name">Dwarka</p>
+                        </Link>
+                    </div>
+                    <div className="temple-card">
+                        <Link to={`/live/5`}>
+                            <img src={temple5Image} alt="Kashi" />
+                            <p className="temple-name">Kashi Vishwanath</p>
+                        </Link>
+                    </div>
+                    <div className="temple-card">
+                        <Link to={`/live/6`}>
+                            <img src={temple6Image} alt="Ujjain" />
+                            <p className="temple-name">Ujjain Mahakaleshwar</p>
+                        </Link>
+                    </div>
+                    <div className="temple-card">
+                        <Link to={`/live/7`}>
+                            <img src={temple7Image} alt="Siddhivinayak Mumbai" />
+                            <p className="temple-name">Siddhivinayak Mumbai</p>
+                        </Link>
+                    </div>
+                    <div className="temple-card">
+                        <Link to={`/live/8`}>
+                            <img src={temple8Image} alt="Shirdi" />
+                            <p className="temple-name">Shirdi</p>
                         </Link>
                     </div>
                 </div>
