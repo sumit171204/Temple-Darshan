@@ -52,16 +52,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            
-            {/* Navbar with icons at the bottom */}
-            <div className="navbar">
-                <Link to="/favorites">
-                    <FontAwesomeIcon icon={faHeart} />
-                </Link>
-                <Link to="/events">
-                    <FontAwesomeIcon icon={faCalendar} />
-                </Link>
-            </div>
+        
         </div>
     );
 };
