@@ -1,5 +1,3 @@
-/* Homepage.css */
-
 /* Color Palette */
 :root {
     --primary-color: #007bff; /* Blue */
@@ -8,15 +6,20 @@
     --background-color: #f8f9fa; /* Light gray */
 }
 
+/* Homepage Container */
 .homepage-container {
     max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
     background-color: var(--background-color);
 }
-.navbar{
+
+/* Navbar */
+.navbar {
     display: none;
 }
+
+/* Banner */
 .banner {
     margin-bottom: 20px;
     background-color: var(--primary-color);
@@ -30,12 +33,14 @@
     margin-bottom: 10px;
 }
 
+/* Temple Grid */
 .temple-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 20px;
 }
 
+/* Temple Card */
 .temple-card {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -59,10 +64,12 @@
     margin-top: 10px;
 }
 
+/* Search Bar */
 .search-bar {
     margin-bottom: 20px;
 }
 
+/* Quick Access Buttons */
 .quick-access {
     display: flex;
     justify-content: space-between;
@@ -83,6 +90,7 @@
     background-color: #218838; /* Darker shade of green */
 }
 
+/* Link Button */
 .link-button {
     padding: 10px 20px;
     font-size: 16px;
@@ -100,27 +108,63 @@
     color: #fff;
 }
 
-/* Styles for mobile */
-@media screen and (max-width: 768px) {
-    .navbar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      background-color: #333;
-      padding: 10px 0;
-      height: 20px;
+/* Media queries for different screen sizes */
+/* Media query for small screens (e.g., smartphones) */
+@media only screen and (min-width: 320px) {
+    .homepage-container {
+        padding: 10px;
     }
-  
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
+
+    .banner h1 {
+        font-size: 20px;
     }
-  
-    .navbar a:hover {
-      color: yellow;
+
+    .temple-card img {
+        height: 120px;
     }
-  }
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media only screen and (min-width: 768px) {
+    .homepage-container {
+        padding: 20px;
+    }
+
+    .banner h1 {
+        font-size: 24px;
+    }
+
+    .temple-card img {
+        height: 150px;
+    }
+}
+
+/* Media query for large screens (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+    .homepage-container {
+        padding: 30px;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .temple-card img {
+        height: 180px;
+    }
+}
+
+/* Media query for extra-large screens (e.g., large desktops) */
+@media only screen and (min-width: 1200px) {
+    .homepage-container {
+        padding: 40px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .temple-card img {
+        height: 200px;
+    }
+}
